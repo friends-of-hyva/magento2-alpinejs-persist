@@ -25,6 +25,8 @@ To install the FriendsOfHyva_AlpineJsPersist module via composer, run the follow
 composer require friends-of-hyva/magento2-alpinejs-persist
 ```
 
+**This module requires Hyvä theme 1.2.0 or higher and AlpineJS v3.**
+
 ## Using AlpineJS persist to save Magewire component data
 [See more details here.](docs/magewire.md)
 
