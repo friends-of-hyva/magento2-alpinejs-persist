@@ -1,0 +1,18 @@
+{
+    "name": "friends-of-hyva/magento2-alpinejs-persist",
+    "description": "Integrate the AlpineJS persist plugin into Hyvä",
+    "require": {
+        "php": "~7.4|~8.1",
+        "magento/magento-composer-installer": "*",
+        "hyva-themes/magento2-theme-module": "^1.2"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Hyva\\AlpineJsPersist\\": "src/"
+        }
+    }
+}

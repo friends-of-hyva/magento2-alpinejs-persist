@@ -1,0 +1,30 @@
+<?php
+/**
+ * Hyvä Themes - https://hyva.io
+ * Copyright © Hyvä Themes 2020-present. All rights reserved.
+ * See https://hyva.io/license
+ */
+
+declare(strict_types=1);
+
+/** @var Template $block */
+/** @var ViewModelRegistry $viewModels */
+
+use Hyva\Theme\Model\ViewModelRegistry;
+use Hyva\Theme\ViewModel\ThemeLibrariesConfig;
+use Magento\Framework\View\Element\Template;
+
+// phpcs:disable Generic.Files.LineLength
+
+$themeLibrary = $viewModels->require(ThemeLibrariesConfig::class);
+$version = $themeLibrary->getVersionIdFor('persist-plugin')
+    ?: $themeLibrary->getVersionIdFor('alpine')
+        ?: '2';
+
+// Persist plugin not implemented in AlpineJS v2
+if ($version == '2') {
+    return;
+}
+
+?>
+<?= /** @noEscape */ $block->fetchView($block->getTemplateFile("FriendsOfHyva_AlpineJsPersist::page/js/plugins/v{$version}/persist.phtml")) ?>
