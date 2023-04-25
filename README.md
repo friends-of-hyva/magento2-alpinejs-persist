@@ -34,3 +34,9 @@ composer require friends-of-hyva/magento2-alpinejs-persist
 This module is made specifically for Hyvä and doesn't work with native Magento.
 
 For more information on Hyvä, please visit the [official Hyvä website](https://hyva.io/).
+
+## Copyright & License
+
+Copyright (c) 2023 Friends of Hyvä
+
+The module is released under the [MIT](LICENSE.txt).
