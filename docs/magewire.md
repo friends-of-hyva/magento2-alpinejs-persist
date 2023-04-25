@@ -1,5 +1,5 @@
 # Using AlpineJS persist to save Magewire component data
-To persist Magewire component data between page visits, follow these steps:
+To persist [Magewire](https://github.com/magewirephp/magewire) component data between page visits, follow these steps:
 
 In your AlpineJS component, use x-data to define the state of your component. Use `$wire.entangle` method to sync the state of AlpineJS and Magewire. Then, add `$persist` to restore the component data after page refresh:
 ```html
